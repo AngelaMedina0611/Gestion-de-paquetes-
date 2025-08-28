@@ -24,4 +24,21 @@ class ColaPaquetes {                         // Define la estructura de la cola 
     this.final = nuevo;                   // Actualiza el puntero 'final' para que apunte al nuevo último nodo
     this.tamaño++;                        // Incrementa el tamaño porque agregamos un elemento
   }
+  // Eliminar paquete del inicio (dequeue) - O(1)
+  despachar() {                           // Método público para desencolar (sacar) el primer paquete
+    if (!this.inicio) {                   // Si no hay elementos (inicio es null)
+      console.log("No hay paquetes en tránsito."); // Mensaje informativo cuando la cola está vacía
+      return null;                        // Devuelve null para indicar que no se pudo despachar
+    }
+
+    const paquete = this.inicio.paquete;  // Guarda el valor del paquete del primer nodo para retornarlo
+    this.inicio = this.inicio.siguiente;  // Mueve el puntero 'inicio' al siguiente nodo (el antiguo segundo)
+
+    if (!this.inicio) {                   // Si después de mover, 'inicio' es null, la cola quedó vacía
+      this.final = null;                  // También ponemos 'final' en null para mantener el estado coherente
+    }
+
+    this.tamaño--;                        // Decrementa el tamaño porque eliminamos un elemento
+    return paquete;                       // Devuelve el paquete que estaba primero en la cola
+  }
 }                     
