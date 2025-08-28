@@ -13,7 +13,7 @@ class ColaPaquetes {                         // Define la estructura de la cola 
   }
    // Agregar paquete al final (enqueue) - O(1)
   agregar(paquete) {                      // Método público para encolar un nuevo paquete
-    const nuevo = new Nodo(paquete);      // Crea un nodo con el paquete recibido
+    const nuevo = new nodo(paquete);      // Crea un nodo con el paquete recibido
 
     if (this.final) {                     // Si existe un último nodo (la cola NO está vacía)
       this.final.siguiente = nuevo;       // Enlaza el último nodo actual con el nuevo nodo
@@ -72,4 +72,5 @@ console.log("Siguiente en salir:",        // Imprime texto descriptivo
   sistema.verSiguiente());                // Ahora el primero debería ser "Paquete 2"
 
 console.log("Tamaño actual:",             // Imprime texto descriptivo
+
   sistema.contar());                            
