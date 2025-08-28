@@ -8,6 +8,7 @@ paquetes al final y eliminarlos del inicio de manera eficiente, con un análisis
 complejidad en notación Big O. 
 
 **📋 Descripción General**
+
 Este sistema fue diseñado para una empresa 
 de logística emergente necesita una solución tecnológica simple para 
 manejar la llegada y el despacho de paquetes en un centro de distribución. El flujo 
@@ -128,9 +129,9 @@ Proyecto desarrollado como parte de la materia algoritmos 2 – Proyectos Final 
 ## INSTALACIÓN
 
 ```bash
- git clone https://github.com/AngelaMedina0611/GESTI-N-DE-PAQUETES-DE-TRANSITO
- GESTI-N-DE-PAQUETES-DE-TRANSITO.git 
- cd GESTI-N-DE-PAQUETES-DE-TRANSITO
+ git clone https://github.com/AngelaMedina0611/Gestion-de-paquetes-
+Gestion-de-paquetes-.git 
+ cd Gestion-de-paquetes-
 
 
     
