@@ -107,7 +107,7 @@ La funcionalidad principal de este código es implementar una estructura de dato
 utilizando una lista enlazada, para gestionar elementos en este caso, “paquetes” de forma ordenada 
 y eficiente.
 ## AUTORIA  
-Proyecto desarrollado como parte de la materia algoritmos 2 – Proyectos Final los integrantes son: Angela Medina , Michelle Caicedo, Santiago Casañas, Ivan Gonzalez
+Proyecto desarrollado como parte de la materia algoritmos 2 – Proyectos Final los integrantes son: Angela Medina , Michelle Caicedo, Sebastian Casañas, Ivan Gonzalez
 
 
 
