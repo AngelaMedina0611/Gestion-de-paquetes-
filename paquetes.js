@@ -41,4 +41,18 @@ class ColaPaquetes {                         // Define la estructura de la cola 
     this.tamaño--;                        // Decrementa el tamaño porque eliminamos un elemento
     return paquete;                       // Devuelve el paquete que estaba primero en la cola
   }
+    // Ver el siguiente paquete en salir (peek) - O(1)
+  verSiguiente() {                        // Método para consultar sin eliminar
+    return this.inicio ? this.inicio.paquete : null; // Si hay inicio, devuelve su paquete; si no, null
+  }
+
+  // Consultar tamaño actual - O(1)
+  contar() {                              // Método para obtener cuántos elementos hay en la cola
+    return this.tamaño;                   // Devuelve el contador mantenido por la estructura
+  }
+
+  // (Opcional) ¿Está vacía? - O(1)
+  estaVacia() {                           // Método de ayuda para verificar si hay elementos
+    return this.tamaño === 0;             // Devuelve true si no hay elementos
+  }
 }                     
