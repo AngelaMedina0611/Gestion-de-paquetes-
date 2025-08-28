@@ -55,4 +55,21 @@ class ColaPaquetes {                         // Define la estructura de la cola 
   estaVacia() {                           // Método de ayuda para verificar si hay elementos
     return this.tamaño === 0;             // Devuelve true si no hay elementos
   }
-}                     
+}  
+const sistema = new ColaPaquetes();       // Crea una nueva cola de paquetes vacía
+
+sistema.agregar("Paquete 1");             // Encola "Paquete 1" al final (cola pasa de 0 -> 1 elemento)
+sistema.agregar("Paquete 2");             // Encola "Paquete 2" (cola ahora tiene 2 elementos)
+sistema.agregar("Paquete 3");             // Encola "Paquete 3" (cola ahora tiene 3 elementos)
+
+console.log("Siguiente en salir:",        // Imprime texto descriptivo
+  sistema.verSiguiente());                // Consulta el primer elemento sin eliminarlo -> "Paquete 1"
+
+console.log("Despachado:",                // Imprime texto descriptivo
+  sistema.despachar());                   // Desencola el primer elemento -> elimina y devuelve "Paquete 1"
+
+console.log("Siguiente en salir:",        // Imprime texto descriptivo
+  sistema.verSiguiente());                // Ahora el primero debería ser "Paquete 2"
+
+console.log("Tamaño actual:",             // Imprime texto descriptivo
+  sistema.contar());                            
